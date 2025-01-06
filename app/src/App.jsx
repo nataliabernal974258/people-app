@@ -1,13 +1,19 @@
 import './App.css'
 import Header from './components/Header'
 import Menu from './components/Menu'
+import Busqueda from './components/Busqueda'
+
 
 function App() {
 
   return (
     <>
       <Header />
-      <Menu />
+      <div className='body'>
+        <Menu />
+        <Busqueda />
+
+      </div>
     </>
   )
 }

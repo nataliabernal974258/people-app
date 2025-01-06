@@ -1,11 +1,15 @@
-export default function Header() {
+import ButtonMenu from "./ButtonMenu";
+import IconProfile from '../assets/icons/profile.png';
+
+
+export default function Menu() {
     return (
         <>
             <div className="menu">
-                <button className="menu-item">Personas</button>
-                <button className="menu-item">Favoritos</button>
-                <button className="menu-item">Mensajes</button>
-                <button className="menu-item">Perfil</button>
+                <ButtonMenu icon={IconProfile} name="Personas" />
+                <ButtonMenu icon={IconProfile} name="Favoritos" />
+                <ButtonMenu icon={IconProfile} name="Mensajes" />
+                <ButtonMenu icon={IconProfile} name="Perfil" />
             </div>
         </>
     )
